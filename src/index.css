@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* customized lines */
+
+.custom-table tbody tr:first-of-type {
+  border-top: 2px solid black; 
+}
