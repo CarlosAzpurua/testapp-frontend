@@ -1,17 +1,19 @@
+import '../../stylesheets/footer.css'
+
+import {Col, Container, Row} from 'react-bootstrap';
+
 import React from 'react'
-import '../../stylesheets/navbar.css'
-import {Container, Row, Col } from 'react-bootstrap';
 
 export default function Footer() {
   return (
-    <footer className="bg-white ">
+    <footer className="footer bg-white ">
       <Container>
-        <Row className="pt-3 pb-2">
-          <Col className="text-center">
-            <p className="m-0">
+        <Row className="footer-row pt-3 pb-2">
+          <Col className="footer-col text-center">
+            <p className="footer-text m-0">
               <span className="fw-bold">Carlos Azpurua</span> &copy; {new Date().getFullYear()}
             </p>
-            <p className="m-0">All rights reserved</p>
+            <p className="footer-text m-0">All rights reserved</p>
           </Col>
         </Row>
       </Container>

@@ -13,12 +13,20 @@ function FileDetails() {
 
     useEffect(() => {
         async function fetchData() {
-            await fetch(`http://localhost:4000/api/v1/secret/file/${params.fileId}`)
-            .then(response => response.json())
-            .then(data => setDataFile(data))
+            try {
+                const response = await fetch(`http://localhost:4000/api/v1/secret/file/${params.fileId}`);
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                const data = await response.json();
+                setDataFile(data);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
         }
+
         fetchData();
-    }, [])
+    }, [params.fileId])
 
     const keys = _.keys(dataFile)
     const detailsFile = dataFile.file
@@ -34,17 +42,7 @@ function FileDetails() {
                 </tr>
             </thead>
             <tbody>
-
-                {/* {_.map(dataFile.file, (value, index) => (
-                <tr key={`row-${index}`}>
-                    {keys.map(key => (
-                    <td key={`${key}-${index}`}>{dataFile[key][index] ?? '-'}</td>
-                    ))}
-                </tr>
-                ))} */}
-
-                
-                {_.map(detailsFile, (value, index) => (
+                {_.map(detailsFile, (_value, index) => (
                 <tr key={`row-${index}`}>
                     {keys.map(key => (
                     <td key={`${key}-${index}`}>{dataFile[key][index] ?? '-'}</td>
