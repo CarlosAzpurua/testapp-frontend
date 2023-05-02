@@ -1,4 +1,4 @@
-# Frontend Challenge
+# Frontend Challenge - Test App
 
 This project is the frontend part of a challenge developed with the intention of testing various tools and skills, among which you can find practical handling of Node.js (developed in Node 16) as requested, as well as the use of JavaScript (ES6+), React, Webpack, and React-Bootstrap correspondingly.
 
@@ -53,7 +53,7 @@ The page will reload when you make changes.
 
 ### Build 🔩
 
-To build the app for production, use the following command.
+4. To build the app for production, use the following command.
 
 ```
 npm run build
