@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Frontend Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the frontend part of a challenge developed with the intention of testing various tools and skills, among which you can find practical handling of Node.js (developed in Node 16) as requested, as well as the use of JavaScript (ES6+), React, Webpack, and React-Bootstrap correspondingly.
 
-## Available Scripts
+## Getting Started 🚀
 
-In the project directory, you can run:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm start`
+### Prerequisites
+To be able to run the application, make sure you have Node.js installed on your machine. 
 
-Runs the app in the development mode.\
+### Installation
+1. First, clone the repository:
+```
+git clone https://github.com/CarlosAzpurua/testapp-frontend.git
+
+# cd into the new directory
+cd ./testapp-frontend
+
+# create a `.env` file by copying contents from `.env.example`
+cp .env.example .env
+
+```
+
+### Installation 🔧
+
+2. To start all processes, functionalities, and testing, we need some libraries that must be previously installed. For this reason, we will use the following commands to install these libraries.
+
+```
+npm i
+```
+
+or
+
+```
+npm install
+```
+
+This will install the libraries we have set up in the package.json, which are explained in more detail below.
+
+### Launching 🔨
+
+3. Here we have the code that we must execute in the terminal for the app to start.
+
+```
+npm start
+```
+
+This will launch the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes.
 
-### `npm test`
+### Build 🔩
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To build the app for production, use the following command.
 
-### `npm run build`
+```
+npm run build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With 🛠️
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_Mention the tools you used to create your project_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React](https://es.reactjs.org/) - A JavaScript library for building user interfaces. This project shows the implementation of hooks and state management according to what is necessary.
+- [Webpack](https://webpack.js.org/) - A module bundler for JavaScript. This project uses webpack to bundle our assets and transpile modern JS code.
+- [Bootstrap](https://getbootstrap.com/) - A popular front-end open-source toolkit for building responsive, mobile-first sites.
+- [React-Bootstrap](https://react-bootstrap.github.io/) - A popular front-end library that builds on Bootstrap.
+- [React Router](https://reactrouter.com/) - A popular routing library for React that allows us to navigate between different components when certain URLs are visited.
+- [prop-types](https://www.npmjs.com/package/prop-types) - This package is used to document the intended types of properties passed to components.
+- [lodash-es](https://lodash.com/docs/4.17.15-es) - A popular JavaScript utility library, providing many useful functions for data manipulation.
+- [web-vitals](https://github.com/GoogleChrome/web-vitals) - This package provides tools to measure and report web vitals metrics, such as page load time, first input delay, and layout shift, which are key indicators of user experience.
 
-### `npm run eject`
+## Coder ✒️
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Carlos Azpurua** - [CarlosAzpurua](https://github.com/CarlosAzpurua)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+* [Create React App](https://github.com/facebook/create-react-app) - A set of tools and scripts to create a React application.
+* [React-Bootstrap Documentation](https://react-bootstrap.github.io/getting-started/introduction/) - A popular front-end framework for React.
+* [React Documentation](https://reactjs.org/docs/getting-started.html) - A JavaScript library for building user interfaces.
